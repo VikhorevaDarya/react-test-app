@@ -1,0 +1,6 @@
+@mixin icon($width, $height) {
+  width: $width;
+  height: $height;
+  object-fit: contain;
+  object-position: center;
+}

@@ -1,0 +1,29 @@
+@import '../const.scss';
+@import '../mixins.scss';
+
+.header {
+  padding: 25px 145px 25px 152px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  color: $grey-text;
+  position: fixed;
+  &__logo {
+    @include icon(120px, 40px);
+ }
+  &__menu {
+    display: flex;
+    margin-left: 350px;
+    align-items: center;
+  }
+  &__item {
+    padding: 0 16px;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  &__button {
+    background-color: $utility-black;
+    color: $utility-white;
+    padding: 10px 25px;
+  }
+}
