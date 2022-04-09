@@ -1,10 +1,20 @@
 import './App.css';
 import Header from './components/Header.js'
+import StartPage from './components/StartPage.js'
+import PhotographyPage from './components/PhotographyPage.js';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <div>
+        <Header />
+      </div>
+      <div>
+      <StartPage />
+      </div>
+      <div>
+      <PhotographyPage />
+      </div>
     </div>
   );
 }

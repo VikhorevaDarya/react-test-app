@@ -1,0 +1,67 @@
+@import '../const.scss';
+@import '../mixins.scss';
+
+.ppage {
+  background-color: $utility-black;
+  padding: 100px;
+  &__title {
+    color: $utility-white;
+    @include subtitle-normal;
+    letter-spacing: 2px;
+  }
+  &__subtitle {
+    @include title-big;
+    text-align: center;
+    color: $utility-white;
+    width: 495px;
+    position: relative;
+    left: calc(50% - 495px/2 + 0.5px);
+  }
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 29px;
+  }
+  &__item {
+    background-color: $utility-white;
+    width: 322px;
+    height: 400px;
+    margin: 16px;
+    border-radius: 20px;
+    &_grey {
+      background: #F2F2F2;
+      position: absolute;
+      height: 197px;
+      width: 322px;
+      box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 20px 20px;
+      margin-top: 205px;
+    }
+  }
+  &__logo {
+    position: absolute;
+  }
+  &__logo-background {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_blue {
+      background-color: $utility-blue;
+    }
+    &_red {
+      background-color: $utility-red;
+    }
+    &_orange {
+      background-color: $utility-orange;
+    }
+    &_pink {
+      background-color: $utility-pink;
+    }
+  }
+}
+

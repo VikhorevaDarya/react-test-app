@@ -6,18 +6,22 @@
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   color: $grey-text;
   position: fixed;
+  width: 100%;
+  z-index: 3;
+  background-color: $utility-white;
   &__logo {
     @include icon(120px, 40px);
- }
+  }
   &__menu {
     display: flex;
-    margin-left: 350px;
     align-items: center;
+    margin-right: 200px;
   }
   &__item {
-    padding: 0 16px;
+    margin-right: 32px;
     white-space: nowrap;
     cursor: pointer;
   }

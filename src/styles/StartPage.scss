@@ -1,0 +1,41 @@
+@import '../const.scss';
+@import '../mixins.scss';
+
+.page {
+  padding: 191px 136px 0 136px;
+}
+
+.container {
+  display: flex;
+  &__logo {
+    @include icon(192px, 64px);
+  }
+  &__text {
+    height: 420px;
+    width: 354px;
+    text-align: start;
+  }
+  &__title {
+    @include header-big;
+  }
+  &__subtitle {
+    margin-top: 18px;
+    @include header-small;
+  }
+  &__buttons {
+    display: flex;
+    margin-top: 20px;
+  }
+  &__button {
+    background-color: $utility-black;
+    color: $utility-white;
+    padding: 10px 25px;
+    max-width: 128px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  &__img {
+    @include icon(350px, 450px);
+    margin-left: 250px;
+  }
+}
